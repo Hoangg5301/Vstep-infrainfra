@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vstep-app-config
+data:
+  NODE_ENV: production
+  APP_URL: https://vstep.lifestack.io.vn
+  AUTH_URL: https://vstep.lifestack.io.vn
+  SMTP_HOST: "smtp.gmail.com"
+  SMTP_PORT: "587"
+  SMTP_USER: "quang.pvvunu@gmail.com"
+  EMAIL_FROM: "quang.pvvunu@gmail.com"
+  OPENAI_WRITING_MODEL: gpt-4o-mini
+  GEMINI_WRITING_MODEL: gemini-3.8-flash

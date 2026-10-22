@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: vstep-app
+  namespace: argocd
+spec:
+  project: vstep-project
+  source:
+    repoURL: https://github.com/Hoangg5301/Vstep-infrainfra.git
+    targetRevision: deploy-prod
+    path: k8s
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: vstep-production
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: vstep-app-ingress
+spec:
+  # ingressClassName: traefik
+  # tls:
+  #   - hosts:
+  #       - vstep.lifestack.io.vn
+  #     secretName: vstep-tls
+  rules:
+    - host: vstep.lifestack.io.vn
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: vstep-app-service
+                port:
+                  name: http
