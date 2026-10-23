@@ -10,8 +10,8 @@ resources:
   
 images:
   - name: vstep-web
-    newName: quangpvvunu/ci_cd_vstep:web-486a766a570538c5305cfd30198e3dd503ccdff1
-    newTag: web-latest
+    newName: quangpvvunu/ci_cd_vstep
+    newTag: web-486a766a570538c5305cfd30198e3dd503ccdff1
   - name: vstep-tools
-    newName: quangpvvunu/ci_cd_vstep:tools-486a766a570538c5305cfd30198e3dd503ccdff1
-    newTag: tools-latest
+    newName: quangpvvunu/ci_cd_vstep
+    newTag: tools-486a766a570538c5305cfd30198e3dd503ccdff1
