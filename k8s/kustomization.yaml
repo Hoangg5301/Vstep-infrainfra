@@ -2,16 +2,15 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: vstep-production
 resources:
-  - config-map.yaml
-  - deployment.yaml
-  - worker-deployment.yaml
-  - service.yaml
-  - ingress.yaml
-  
+- config-map.yaml
+- deployment.yaml
+- worker-deployment.yaml
+- service.yaml
+- ingress.yaml
 images:
-  - name: vstep-web
-    newName: quangpvvunu/ci_cd_vstep
-    newTag: web-486a766a570538c5305cfd30198e3dd503ccdff1
-  - name: vstep-tools
-    newName: quangpvvunu/ci_cd_vstep
-    newTag: tools-486a766a570538c5305cfd30198e3dd503ccdff1
+- name: vstep-web
+  newName: quangpvvunu/ci_cd_vstep
+  newTag: web-ae4cfad83151848a8be6226d8ebb6b61b674d6b1
+- name: vstep-tools
+  newName: quangpvvunu/ci_cd_vstep
+  newTag: tools-ae4cfad83151848a8be6226d8ebb6b61b674d6b1
