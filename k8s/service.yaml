@@ -4,7 +4,7 @@ metadata:
   name: vstep-app-service
 spec:
   selector:
-    app: vstep
+    app: vstep-pods
   ports:
     - name: http
       port: 80
