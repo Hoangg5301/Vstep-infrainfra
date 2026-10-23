@@ -12,6 +12,8 @@ spec:
       labels:
         app: vstep-ai-worker
     spec:
+      imagePullSecrets:
+        - name: dockerhub-private-cred
       terminationGracePeriodSeconds: 120
       containers:
         - name: ai-worker

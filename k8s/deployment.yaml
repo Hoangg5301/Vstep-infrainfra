@@ -12,6 +12,8 @@ spec:
       labels:
         app: vstep-pods
     spec:
+      imagePullSecrets:
+        - name: dockerhub-private-cred
       containers:
         - name: vstep-containers
           image: vstep-web
